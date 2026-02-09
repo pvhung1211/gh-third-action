@@ -6,8 +6,8 @@ on:
       - dev
 env: 
   MONGODB_CLUSTER_ADDRESS: cluster0.mneadtf.mongodb.net
-  MONGODB_USERNAME: hungpham
-  MONGODB_PASSWORD: Iym22Qh6U6QKceDp
+  MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+  MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
   PORT: 8080
 jobs:
   test:
